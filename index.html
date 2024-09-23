@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --text-light: #333333;
+      --accent-light: #ff0000;
+      --secondary-light: #000000;
+      
+      --bg-dark: #181818;
+      --text-dark: #e0e0e0;
+      --accent-dark: #ff4500;
+      --secondary-dark: #ffffff;
+    }
+
+    body {
+      font-family: 'Helvetica', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      margin: 0;
+      padding: 2rem;
+      transition: background-color 0.7s, color 0.6s;
+    }
+
+    .dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .dark-mode h1 {
+      border-color: var(--secondary-dark);
+    }
+
+    .dark-mode h1,
+    .dark-mode a {
+      color: var(--secondary-dark);
+    }
+
+    .dark-mode a:hover {
+      color: var(--accent-dark);
+    }
+
+    h1 {
+      font-size: 3rem;
+      border-top: 8px solid var(--secondary-light);
+      padding: 1rem 0;
+      width: 80%;
+      margin-bottom: 1rem;
+      color: var(--secondary-light);
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    .subtitle {
+      color: var(--accent-light);
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: var(--accent-light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: var(--secondary-light);
+    }
+
+    .section-title {
+      color: var(--accent-light);
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--accent-light);
+      background-color: transparent;
+      color: var(--accent-light);
+      cursor: pointer;
+      transition: all 0.3s;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    button:hover {
+      background-color: var(--accent-light);
+      color: var(--secondary-light);
+    }
+  </style>
+</head>
+<body>
+  <button id="toggle-dark-mode">Toggle Me</button>
+
+  <h1>Souharda Roy</h1>
+  <p class="subtitle">Sophomore Computer Science and Engineering Student</p>
+  
+  <ul>
+    <li>Midnapore, 721101</li>
+    <li>(+91) 76021 41587</li>
+    <li>souharda_roy@outlook.com</li>
+  </ul>
+  
+  <p class="section-title">Skills</p>
+  <ul>
+    <li>Web Development</li>
+    <li>Basic Engineering</li>
+    <li>Cybersecurity</li>
+    <li>Competitive Programming</li>
+  </ul>
+  
+  <p class="section-title">Education</p>
+  <ul>
+    <li><span class="text-lg">Vidyasagar Shishu Niketan - GED</span><br>April 2009 to April 2023</li>
+    <li><span class="text-lg">International Institute of Information Technology - B.Tech</span><br>August 2023 to August 2027 (Expected)</li>
+  </ul>
+  
+  <p class="section-title">Experience</p>
+  <p>Space intentionally kept blank</p>
+
+  <p class="section-title">Across the World Wide Web</p>
+  <ul>
+    <li><a href="https://www.linkedin.com/in/souharda-roy3301/">LinkedIn Profile</a></li>
+    <li><a href="https://github.com/cordiality-crypto">GitHub Profile</a></li>
+    <li><a href="https://www.instagram.com/_herzlichkeit/">Instagram Profile</a></li>
+    <li><a href="https://leetcode.com/u/cordiality_crypto/">Leetcode Profile</a></li>
+    <li><a href="https://codeforces.com/profile/herzlichkeit">Codeforces Profile</a></li>
+  </ul>
+
+  <script>
+    const toggleButton = document.getElementById('toggle-dark-mode');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
